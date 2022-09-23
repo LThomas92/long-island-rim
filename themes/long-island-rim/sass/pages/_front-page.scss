@@ -1,0 +1,67 @@
+.c-front-page {
+    &__hp-service {
+        display: grid !important;
+        grid-template-columns: 0.75fr 1fr !important;
+        &__content {
+            color: $white;
+            padding-left: 8rem;
+            h1 {
+                font-size: 3.8rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 4rem;
+                font-weight: 300;
+            }
+            a {
+                text-decoration: none;
+                background-color: $red;
+                color: $white;
+                padding: 1.2rem 1.5rem;
+                border-radius: 2px;
+                font-size: 1.5rem;
+                &::after {
+                    content: '';
+                    background-image: url('../img/right-arrow.svg');
+                    background-size: 15px 15px;
+                    background-repeat: no-repeat;
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 0.4rem;
+                }
+            }
+        }
+        &__image {
+            clip-path: polygon(42% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+    &__feature-section {
+        background-color: $dark-grey;
+        padding: 4rem 8rem;
+    }
+    &__features {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__feature {
+        text-align: center;
+        flex-basis: calc((100% / 3) - 5rem);
+        img {
+            margin: 0 auto;
+        }
+        h3 {
+            color: $white;
+            font-size: 2.1rem;
+            margin-top: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            color: $white;
+            font-size: 1.4rem;
+        }
+    }
+}

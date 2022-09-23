@@ -1,0 +1,10 @@
+@import "variables/globals";
+@import "mixins";
+@import "main";
+
+//Navigation
+@import "navigation/header";
+@import "navigation/footer";
+
+//Pages
+@import "pages/front-page";

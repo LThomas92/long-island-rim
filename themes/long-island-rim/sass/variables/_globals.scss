@@ -1,14 +1,13 @@
 //Colors
-$black: #0F0F0F;
+$black: #161616;
 $white: #fff;
-$dark-grey: #2a2a2a;
-$light-grey: #ced0ceff;
-$grey: #e6e8e6ff;
-$red: #f15025ff;
+$dark-grey: #191919;
+$light-grey: #ced0ce;
+$red: #f15025;
 
 //Fonts
-$openSans: 'Open Sans', sans-serif;
-$valera: 'Varela Round', sans-serif;
+$chakra: 'Chakra Petch', sans-serif;
+$mulish: 'Mulish', sans-serif;
 
 /*
  * Responsive Breakpoints
@@ -44,3 +43,4 @@ $valera: 'Varela Round', sans-serif;
  .revealed {
    transition: 0.6s $bezier;
  }
+ 

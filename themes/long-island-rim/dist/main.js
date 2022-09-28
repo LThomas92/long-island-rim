@@ -110,7 +110,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "/*\n * Responsive Breakpoints\n ***************************/\n/*\n  * Margins / Max Widths\n  ***************************/\n.to-reveal {\n  opacity: 0; }\n\n.revealed {\n  transition: 0.6s cubic-bezier(0.64, 0.04, 0.35, 1); }\n\n/***\n    The new CSS reset - version 1.7.3 (last updated 7.8.2022)\n    GitHub page: https://github.com/elad2412/the-new-css-reset\n***/\n/*\n    Remove all the styles of the \"User-Agent-Stylesheet\", except for the 'display' property\n    - The \"symbol *\" part is to solve Firefox SVG sprite bug\n */\n*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {\n  all: unset;\n  display: revert; }\n\nhtml {\n  font-size: 62.5% !important;\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  width: 100%; }\n  @media screen and (max-width: 340px) {\n    html {\n      font-size: 50% !important; } }\n\n/* Preferred box-sizing value */\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\n/* Reapply the pointer cursor for anchor tags */\na, button {\n  cursor: revert; }\n\n/* Remove list styles (bullets/numbers) */\nol, ul, menu {\n  list-style: none; }\n\n/* For images to not be able to exceed their container */\nimg {\n  max-width: 100%; }\n\n/* removes spacing between cells in tables */\ntable {\n  border-collapse: collapse; }\n\n/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */\ninput, textarea {\n  -webkit-user-select: auto; }\n\n/* revert the 'white-space' property for textarea elements on Safari */\ntextarea {\n  white-space: revert; }\n\n/* minimum style to allow to style meter element */\nmeter {\n  -webkit-appearance: revert;\n  appearance: revert; }\n\n/* reset default text opacity of input placeholder */\n::placeholder {\n  color: unset; }\n\n/* fix the feature of 'hidden' attribute.\n display:revert; revert to element instead of attribute */\n:where([hidden]) {\n  display: none; }\n\n/* revert for bug in Chromium browsers\n - fix for the content editable attribute will work properly.\n - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/\n:where([contenteditable]:not([contenteditable=\"false\"])) {\n  -moz-user-modify: read-write;\n  -webkit-user-modify: read-write;\n  overflow-wrap: break-word;\n  -webkit-line-break: after-white-space;\n  -webkit-user-select: auto; }\n\n/* apply back the draggable feature - exist only in Chromium and Safari */\n:where([draggable=\"true\"]) {\n  -webkit-user-drag: element; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  background-color: rgba(206, 208, 206, 0.2); }\n\na, p, li {\n  font-family: \"Open Sans\", sans-serif; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: \"Varela Round\", sans-serif; }\n\n.site-header {\n  display: flex;\n  justify-content: space-between;\n  padding: 2.5rem 3.5rem;\n  border-bottom: 1.3px solid #fff; }\n\n.main-navigation ul {\n  display: flex;\n  justify-content: space-between; }\n\n.main-navigation li {\n  color: #fff;\n  font-size: 1.4rem;\n  font-weight: 500;\n  padding-right: 1.2rem;\n  line-height: 1.1;\n  transition: all 300ms ease-in; }\n  .main-navigation li:hover {\n    color: #f15025ff; }\n\n.site-footer {\n  padding: 4.5rem 2.5rem; }\n  .site-footer .footer-nav ul {\n    display: flex;\n    justify-content: space-between; }\n  .site-footer .footer-nav li {\n    color: #fff;\n    font-size: 1.4rem;\n    padding-right: 1.2rem;\n    line-height: 1.1;\n    transition: all 300ms ease-in; }\n    .site-footer .footer-nav li:hover {\n      color: #f15025ff; }\n\n.c-front-page__hp-service {\n  display: grid !important;\n  grid-template-columns: 0.75fr 1fr !important; }\n  .c-front-page__hp-service__content {\n    color: #fff;\n    padding-left: 8rem; }\n    .c-front-page__hp-service__content h1 {\n      font-size: 3.8rem;\n      margin-top: 3rem;\n      margin-bottom: 1.5rem; }\n    .c-front-page__hp-service__content p {\n      font-size: 1.4rem;\n      margin-bottom: 4rem;\n      font-weight: 300; }\n    .c-front-page__hp-service__content a {\n      text-decoration: none;\n      background-color: #f15025ff;\n      color: #fff;\n      padding: 1.2rem 1.5rem;\n      border-radius: 2px;\n      font-size: 1.5rem; }\n      .c-front-page__hp-service__content a::after {\n        content: '';\n        background-image: url(" + escape(__webpack_require__(/*! ../img/right-arrow.svg */ "./img/right-arrow.svg")) + ");\n        background-size: 15px 15px;\n        background-repeat: no-repeat;\n        width: 15px;\n        height: 15px;\n        display: inline-block;\n        vertical-align: middle;\n        margin-left: 0.4rem; }\n  .c-front-page__hp-service__image {\n    clip-path: polygon(42% 0, 100% 0, 100% 100%, 0% 100%); }\n\n.c-front-page__feature-section {\n  background-color: #2a2a2a;\n  padding: 4rem 8rem; }\n\n.c-front-page__features {\n  display: flex;\n  justify-content: space-between; }\n\n.c-front-page__feature {\n  text-align: center;\n  flex-basis: calc((100% / 3) - 5rem); }\n  .c-front-page__feature img {\n    margin: 0 auto; }\n  .c-front-page__feature h3 {\n    color: #fff;\n    font-size: 2.1rem;\n    margin-top: 1.2rem;\n    margin-bottom: 2rem; }\n  .c-front-page__feature p {\n    color: #fff;\n    font-size: 1.4rem; }\n", ""]);
+exports.push([module.i, "/*\n * Responsive Breakpoints\n ***************************/\n/*\n  * Margins / Max Widths\n  ***************************/\n.to-reveal {\n  opacity: 0; }\n\n.revealed {\n  transition: 0.6s cubic-bezier(0.64, 0.04, 0.35, 1); }\n\n/***\n    The new CSS reset - version 1.7.3 (last updated 7.8.2022)\n    GitHub page: https://github.com/elad2412/the-new-css-reset\n***/\n/*\n    Remove all the styles of the \"User-Agent-Stylesheet\", except for the 'display' property\n    - The \"symbol *\" part is to solve Firefox SVG sprite bug\n */\n*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {\n  all: unset;\n  display: revert; }\n\nhtml {\n  font-size: 62.5% !important;\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  width: 100%; }\n  @media screen and (max-width: 340px) {\n    html {\n      font-size: 50% !important; } }\n\n/* Preferred box-sizing value */\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\n/* Reapply the pointer cursor for anchor tags */\na, button {\n  cursor: revert; }\n\n/* Remove list styles (bullets/numbers) */\nol, ul, menu {\n  list-style: none; }\n\n/* For images to not be able to exceed their container */\nimg {\n  max-width: 100%; }\n\n/* removes spacing between cells in tables */\ntable {\n  border-collapse: collapse; }\n\n/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */\ninput, textarea {\n  -webkit-user-select: auto; }\n\n/* revert the 'white-space' property for textarea elements on Safari */\ntextarea {\n  white-space: revert; }\n\n/* minimum style to allow to style meter element */\nmeter {\n  -webkit-appearance: revert;\n  appearance: revert; }\n\n/* reset default text opacity of input placeholder */\n::placeholder {\n  color: unset; }\n\n/* fix the feature of 'hidden' attribute.\n display:revert; revert to element instead of attribute */\n:where([hidden]) {\n  display: none; }\n\n/* revert for bug in Chromium browsers\n - fix for the content editable attribute will work properly.\n - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/\n:where([contenteditable]:not([contenteditable=\"false\"])) {\n  -moz-user-modify: read-write;\n  -webkit-user-modify: read-write;\n  overflow-wrap: break-word;\n  -webkit-line-break: after-white-space;\n  -webkit-user-select: auto; }\n\n/* apply back the draggable feature - exist only in Chromium and Safari */\n:where([draggable=\"true\"]) {\n  -webkit-user-drag: element; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  background-color: #161616; }\n\na, p, li {\n  font-family: \"Mulish\", sans-serif; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: \"Chakra Petch\", sans-serif; }\n\n@keyframes fadeInRight {\n  from {\n    opacity: 0;\n    transform: translateX(300px); }\n  to {\n    opacity: 1; } }\n\n.site-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 2.5rem 3.5rem;\n  margin-bottom: 3rem; }\n  .site-header__logo {\n    cursor: pointer; }\n    .site-header__logo img {\n      width: 100%;\n      height: 6.5rem;\n      object-fit: cover; }\n\n.main-navigation ul {\n  display: flex;\n  justify-content: space-between; }\n\n.main-navigation li {\n  color: #fff;\n  font-size: 1.4rem;\n  font-weight: 500;\n  padding-right: 1.2rem;\n  line-height: 1.1;\n  letter-spacing: 0.2px;\n  text-transform: uppercase;\n  transition: all 300ms ease-in; }\n  .main-navigation li:hover {\n    color: #f15025; }\n\n.site-footer {\n  padding: 4.5rem 2.5rem; }\n  .site-footer .footer-nav ul {\n    display: flex;\n    flex-direction: column; }\n  .site-footer .footer-nav li {\n    color: #fff;\n    font-size: 1.4rem;\n    padding-right: 1.2rem;\n    line-height: 1.1;\n    transition: all 300ms ease-in; }\n    .site-footer .footer-nav li:hover {\n      color: #f15025; }\n  .site-footer__logo {\n    max-width: 250px;\n    max-height: 250px;\n    margin: 0 auto; }\n    .site-footer__logo img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover; }\n\n.c-front-page__hp-service {\n  display: grid !important;\n  grid-template-columns: 0.75fr 1fr !important; }\n  .c-front-page__hp-service__content {\n    color: #fff;\n    padding-left: 8rem;\n    position: relative;\n    left: 10px;\n    transition: all .4s;\n    opacity: 0; }\n    .c-front-page__hp-service__content--active {\n      opacity: 1;\n      left: 0; }\n    .c-front-page__hp-service__content h1 {\n      font-size: 5rem;\n      margin-top: 3rem;\n      margin-bottom: 1.5rem; }\n    .c-front-page__hp-service__content p {\n      font-size: 1.4rem;\n      margin-bottom: 4rem;\n      font-weight: 300; }\n    .c-front-page__hp-service__content a {\n      text-decoration: none;\n      background-color: #f15025;\n      color: #fff;\n      padding: 1.2rem 1.5rem;\n      border-radius: 2px;\n      font-size: 1.5rem; }\n      .c-front-page__hp-service__content a::after {\n        content: '';\n        background-image: url(" + escape(__webpack_require__(/*! ../img/right-arrow.svg */ "./img/right-arrow.svg")) + ");\n        background-size: 15px 15px;\n        background-repeat: no-repeat;\n        width: 15px;\n        height: 15px;\n        display: inline-block;\n        vertical-align: middle;\n        margin-left: 0.4rem; }\n  .c-front-page__hp-service__image {\n    clip-path: polygon(42% 0, 100% 0, 100% 100%, 0% 100%);\n    position: relative;\n    right: 10px;\n    opacity: 0;\n    transition: all .4s;\n    transition-delay: .6s; }\n    .c-front-page__hp-service__image--active {\n      right: 0;\n      opacity: 1; }\n\n.c-front-page__feature-section {\n  background-color: #191919;\n  padding: 4rem 8rem; }\n\n.c-front-page__features {\n  display: flex;\n  justify-content: space-between; }\n\n.c-front-page__feature {\n  text-align: center;\n  flex-basis: calc((100% / 3) - 5rem); }\n  .c-front-page__feature img {\n    margin: 0 auto;\n    max-width: 30px;\n    max-height: 30px;\n    width: 100%;\n    height: 100%;\n    object-fit: cover; }\n  .c-front-page__feature h3 {\n    color: #fff;\n    font-size: 2.1rem;\n    margin-top: 1.2rem;\n    margin-bottom: 2rem; }\n  .c-front-page__feature p {\n    color: #fff;\n    font-size: 1.4rem; }\n\n.c-front-page__featured-product-title {\n  color: #fff;\n  font-size: 3.5rem;\n  line-height: 1;\n  letter-spacing: 0.6px;\n  font-weight: 500;\n  text-align: center;\n  margin-top: 5rem;\n  margin-bottom: 8rem; }\n  .c-front-page__featured-product-title::after {\n    content: 'Products';\n    background-color: #f15025;\n    width: 200px;\n    height: 50px;\n    background-size: cover;\n    padding-top: 0.8rem;\n    display: inline-block;\n    margin-left: 0.4rem;\n    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%); }\n\n.c-front-page__featured-product-section {\n  padding-left: 10rem;\n  padding-right: 10rem; }\n\n.c-front-page__featured-products {\n  display: flex;\n  justify-content: space-between; }\n\n.c-front-page__featured-product {\n  flex-basis: calc(( 100% / 3) - 3rem);\n  cursor: pointer; }\n  .c-front-page__featured-product__title {\n    color: #fff;\n    font-size: 2rem;\n    margin-bottom: 2.5rem;\n    text-align: center; }\n  .c-front-page__featured-product__img {\n    -webkit-box-shadow: 0 0 10px #fff;\n    box-shadow: 0 0 10px #fff; }\n    .c-front-page__featured-product__img img {\n      max-width: 400px;\n      max-height: 400px;\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n      display: block;\n      transition: 300ms cubic-bezier(0.64, 0.04, 0.35, 1);\n      cursor: pointer; }\n      .c-front-page__featured-product__img img:hover {\n        transform: scale(1.05); }\n\n.c-about-page__video {\n  position: relative;\n  padding-bottom: 56.25%;\n  /* 16:9 */\n  height: 0; }\n  .c-about-page__video video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%; }\n\n.c-faqs {\n  margin: 0 5.5rem; }\n  .c-faqs__title {\n    font-size: 1.3rem;\n    color: #fff;\n    text-align: center;\n    margin-bottom: 2.2rem;\n    text-transform: uppercase; }\n  .c-faqs__subtitle {\n    margin-bottom: 5rem;\n    text-align: center;\n    color: #eee;\n    font-size: 2.8rem; }\n  .c-faqs__list-items {\n    display: flex;\n    justify-content: center; }\n  .c-faqs__list-item {\n    margin-left: 5rem;\n    color: #fff;\n    font-size: 1.5rem;\n    cursor: pointer;\n    text-transform: uppercase;\n    transition: all 300ms ease-in; }\n    .c-faqs__list-item:hover {\n      color: #f15025; }\n", ""]);
 
 // exports
 
@@ -768,15 +768,82 @@ __webpack_require__(/*! ./script.js */ "./src/script.js");
 /***/ (function(module, exports) {
 
 $ = jQuery.noConflict();
+let windowSize = false;
+let windowHeight = $(window).height();
+let gutenbergScrollAnims = false;
+let blockTriggerHeight = $(window).height() * 0.33;
 
 $(document).ready(function () {
-    $('.c-front-page__hp-services').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
+  //Front Page Slideshow
+  $('.c-front-page__hp-services').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+
+  setTimeout(function () {
+    $('.c-front-page__hp-service__content').addClass('c-front-page__hp-service__content--active');
+    $('.c-front-page__hp-service__image').addClass('c-front-page__hp-service__image--active');
+  }, 400);
+
+  if (jQuery(".gutenberg-styles > *").length && !(window.location.hash != "" && jQuery(window.location.hash).length)) {
+    gutenbergScrollAnims = true;
+    jQuery(".gutenberg-styles > *").each(function () {
+      let offset = jQuery(this).get(0).getBoundingClientRect().top;
+      jQuery(this).data("offset", offset);
+      jQuery(this).addClass("to-reveal");
     });
+
+    let numRevealed = 0;
+    jQuery(".gutenberg-styles .to-reveal").each(function () {
+      if (jQuery(window).scrollTop() + windowHeight - blockTriggerHeight >= jQuery(this).data("offset")) {
+        numRevealed++;
+        const thisRef = $(this);
+        setTimeout(function () {
+          thisRef.removeClass("to-reveal");
+          thisRef.addClass("revealed");
+        }, 700 + numRevealed * 600);
+      }
+    });
+  }
+});
+
+$(window).scroll(() => {
+  let scrolled = $(window).scrollTop();
+  // gutenberg scroll anims
+  if (gutenbergScrollAnims) {
+    $(".gutenberg-styles .to-reveal").each(function () {
+      if (scrolled + windowHeight - blockTriggerHeight >= $(this).data("offset")) {
+        $(this).removeClass("to-reveal");
+        $(this).addClass("revealed");
+      }
+    });
+  }
+});
+
+$(window).resize(() => {
+  if (jQuery(".gutenberg-styles > *").length && !(window.location.hash != "" && jQuery(window.location.hash).length)) {
+    gutenbergScrollAnims = true;
+    jQuery(".gutenberg-styles > *").each(function () {
+      let offset = jQuery(this).get(0).getBoundingClientRect().top;
+      jQuery(this).data("offset", offset);
+      jQuery(this).addClass("to-reveal");
+    });
+
+    let numRevealed = 0;
+    jQuery(".gutenberg-styles .to-reveal").each(function () {
+      if (jQuery(window).scrollTop() + (windowHeight - blockTriggerHeight) >= jQuery(this).data("offset")) {
+        numRevealed++;
+        const thisRef = $(this);
+        setTimeout(function () {
+          thisRef.removeClass("to-reveal");
+          thisRef.addClass("revealed");
+        }, 700 + numRevealed * 600);
+      }
+    });
+  }
 });
 
 /***/ })

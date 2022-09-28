@@ -11,24 +11,32 @@
 
 ?>
 
+<?php 
+	$instagram = get_field('instagram', 'option');
+	$facebook = get_field('facebook', 'option');
+?>
+
 	<footer id="colophon" class="site-footer">
 
-		<div class="site-footer__email-newsletter">
-			NEWSLETTER
-		</div>
 
 		<div class="site-footer__logo">
-			<img src="" alt="Long Island Rim Logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Long Island Rim Logo">
 		</div>
-	<nav class="footer-nav">
-            <?php
-              wp_nav_menu(
-                array(
-                  'theme_location' => 'menu-2',
-                  'menu_id'        => 'footer-navigation',
-                )
-                    ); ?>
-            </nav>
+		<div class="site-footer__content">
+			<nav class="footer-nav">
+					<?php
+					wp_nav_menu(
+						array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'footer-navigation',
+						)
+							); ?>
+			</nav>
+			<div class="site-footer__social-media">
+				<a href="">
+					<img src="" alt="">
+				</a>					
+			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

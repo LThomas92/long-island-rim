@@ -96,13 +96,13 @@ meter {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba($light-grey, 0.2);
+  background-color: $black;
 }
 
 a, p, li {
-  font-family: $openSans;
+  font-family: $mulish;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $valera;
+  font-family: $chakra;
 }

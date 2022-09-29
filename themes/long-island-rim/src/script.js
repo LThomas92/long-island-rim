@@ -5,6 +5,12 @@ let gutenbergScrollAnims = false;
 let blockTriggerHeight = $(window).height() * 0.33;
 
 $(document).ready(function() {
+
+  $('.c-faqs__General').click(function() {
+    console.log('works');
+    $('.c-faqs__general-content').addClass('c-faqs__active-content');
+  });
+
   //Front Page Slideshow
     $('.c-front-page__hp-services').slick({
         dots: true,
@@ -89,4 +95,5 @@ $(document).ready(function() {
           }
         });
       }
+
     });

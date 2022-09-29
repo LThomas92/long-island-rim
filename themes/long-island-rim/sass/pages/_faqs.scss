@@ -28,4 +28,20 @@
             color: $red;
         }
     }
+    &__faq-content {
+        margin-top: 2.5rem;
+        color: $white;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    &__general-content,
+    &__services-content,
+    &__hours-content,
+    &__location-content {
+        opacity: 0;
+        transition: all 300ms ease-in;
+    }
+    &__active-content {
+        opacity: 1;
+    }
 }
